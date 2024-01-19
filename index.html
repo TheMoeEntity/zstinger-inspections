@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!--====== Title ======-->
+    <title>Autonomous Drone Technology - Patent Pending</title>
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--====== Favicon Icon ======-->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/png"
+    />
+
+    <!--====== Font Awesome CSS ======-->
+    <link rel="stylesheet" href="assets/webfont/font-css/LineIcons.css" />
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css" />
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+      <div class="loader">
+        <div class="ytp-spinner">
+          <div class="ytp-spinner-container">
+            <div class="ytp-spinner-rotator">
+              <div class="ytp-spinner-left">
+                <div class="ytp-spinner-circle"></div>
+              </div>
+              <div class="ytp-spinner-right">
+                <div class="ytp-spinner-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!-- ========= investor loader starts ======== -->
+    <div id="modalLoader" style="display: none;">
+    </div>
+
+
+    <!--====== HEADER PART START ======-->
+
+    <!-- ===== modal starts ===== -->
+    <div
+      class="modal fade"
+      id="form"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+     
+        <div class="modal-content position-relative">
+          <div
+          id="loader"
+        ></div>
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title" id="exampleModalLabel">Authentication</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- <form onsubmit=""> -->
+          <div class="modal-body">
+            <h4 class="pb-10">Enter secret key to authenticate</h4>
+            <div class="form-group">
+              <small id="emailHelp" class="form-text text-muted"
+                >Your information is safe with us.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="password1">Your Password</label>
+              <input
+                type="password"
+                name="password"
+                class="form-control"
+                id="password1"
+                placeholder="Password"
+              />
+            </div>
+            <p id="auth"></p>
+          </div>
+          <div class="modal-footer border-top-0 d-flex justify-content-center">
+            <button
+              type="button"
+              id="sub_Btn"
+              class="btn text-white"
+              style="background-color: #1e75d9"
+            >
+              Submit
+            </button>
+          </div>
+          <!-- </form> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- modal ends -->
+
+    <section class="header_area">
+      <div class="header_navbar" style="background-color: white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg position-relative">
+                <div class="logo_div">
+                  <a class="navbar-brand" href="/">
+                    <img
+                      src="assets/images/Zlogo1.png"
+                      width="128px"
+                      height="72px"
+                      alt="Logo"
+                    />
+                  </a>
+                </div>
+                <div class="subtitle">
+                  Autonomous Drone Technology - Patent Pending
+                </div>
+
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                </button>
+
+                <div
+                  class="collapse navbar-collapse sub-menu-bar"
+                  id="navbarSupportedContent"
+                >
+                  <ul id="nav" class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="page-scroll" href="#home">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="page-scroll" href="#features">Features</a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="page-scroll" href="#video">Tutorial</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                      <a class="page-scroll" href="#gallery">Gallery</a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="page-scroll"
+                        data-toggle="modal"
+                        data-target="#form"
+                        >Investor Portal</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- navbar collapse -->
+              </nav>
+              <!-- navbar -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </div>
+      <!-- header navbar -->
+      <!-- header hero -->
+    </section>
+    <section id="home" class="about_area pt-95">
+      <div class="about_shape d-none d-lg-block">
+        <img src="assets/images/about_shape.svg" alt="shape" />
+      </div>
+      <!-- about shape -->
+      <div
+        class="pl-10 pr-10 about_image d-flex align-items-center align-items-center justify-content-end"
+      >
+        <div class="image">
+          <img src="assets/images/buildingss-min.png" alt="about" />
+        </div>
+      </div>
+      <!-- about image -->
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-lg-6">
+            <div class="about_content pl-10">
+              <div class="section_title pb-25">
+                <h4 class="title">
+                  Building Inspections, Earthquake damage assessments, Storm
+                  damage inspections
+                </h4>
+                <p>
+                  Unleashing the future of Aerial Autonomy. Discover the next
+                  next generation in autonomous drones, equipped with integrated
+                  radar and imaging technologies
+                </p>
+              </div>
+              <!-- <a href="#" class="main-btn">Read More</a> -->
+            </div>
+            <!-- about content -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="home" class="header_hero d-lg-flex align-items-center">
+      <div class="container drone_bg">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="header_hero_content mt-45">
+              <h2 class="header_title"><span>Solar</span> Drone</h2>
+              <p>
+                Introducing our unique Solar-powered Fixed-Wing Drone—a
+                cutting-edge charging station for Autonomous Inspection Drones.
+              </p>
+              <br />
+              <ol>
+                <li>• Harnesses solar power for sustainable flights.</li>
+                <li>• Cutting-edge technology for efficient operation.</li>
+                <li>• Ideal for surveillance, mapping, and inspections.</li>
+                <li>• Innovation meets sustainability in every flight.</li>
+              </ol>
+              <!-- <a href="https://uideck.com/templates/producto/" class="main-btn"
+                >Purchase</a
+              > -->
+            </div>
+            <!-- header hero content -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+      <div class="header_shape bg_cover d-none d-lg-block"></div>
+
+      <!-- header shape -->
+      <div class="header_image d-flex align-items-center">
+        <div class="image">
+          <div class="subtitle2">Patent Pending</div>
+          <img src="assets/images/Drone 2.png" alt="header image" />
+          <!-- <img src="assets/images/dots.svg" alt="dots" class="dots" /> -->
+        </div>
+        <!-- image -->
+      </div>
+
+      <!-- header image -->
+    </div>
+
+    <div id="home2" class="header_hero d-lg-flex align-items-center mt-15">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="header_hero_content mt-45">
+              <h2 class="header_title">
+                <h2 class="header_title">
+                  <span>Autonomous Exterior</span> Drone
+                </h2>
+              </h2>
+              <p>
+                Capable of conducting external inspections with precison, as
+                well as the unique ability to carry smaller drones as payloads
+                for comprehensive interior assessments.
+              </p>
+              <br />
+              <ol>
+                <li>• Ideal for diverse outdoor applications.</li>
+                <li>• Agile design for precise navigation.</li>
+                <li>• Advanced camera technology for detailed visuals.</li>
+                <li>
+                  • Built robustly for dependable performance in various
+                  conditions.
+                </li>
+              </ol>
+              <!-- <a href="https://uideck.com/templates/producto/" class="main-btn"
+                >Purchase</a
+              > -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="header_shape bg_cover d-none d-lg-block"
+        style="background-image: url(assets/images/header_shape.png)"
+      ></div>
+
+      <div class="header_image d-flex align-items-center">
+        <div class="image">
+          <div class="subtitle3">Patent Pending</div>
+          <img src="assets/images/Small Drone Png.png" alt="header image" />
+          <!-- <img src="assets/images/dots.svg" alt="dots" class="dots" /> -->
+        </div>
+      </div>
+    </div>
+
+    <!--====== FEATURES PART ENDS ======-->
+
+    <!--====== ABOUT PART START ======-->
+
+    <section id="about" class="about_area pt-95">
+      <div class="about_shape d-none d-lg-block">
+        <img src="assets/images/about_shape.svg" alt="shape" />
+      </div>
+      <!-- about shape -->
+      <div
+        class="pl-10 pr-10 about_image d-flex align-items-center align-items-center justify-content-end"
+      >
+        <div class="image">
+          <img src="assets/images/A4_Brochure_Cover_Mockup_1.jpg" alt="about" />
+        </div>
+      </div>
+      <!-- about image -->
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-lg-6">
+            <div class="about_content pl-10">
+              <div class="section_title pb-25">
+                <h4 class="title">About Us</h4>
+                <p>
+                  At ZStinger Inspections, our business model revolves around
+                  client satisfaction and technological excellence. We deploy
+                  state-of-the-art drones to conduct efficient, accurate, and
+                  versatile aerial assessments across diverse industries. By
+                  prioritizing precison and adhering to stringent safety
+                  standards, we ensure that our client receive comprehensive
+                  insights, enabling informed decison-making and optimal
+                  operational performance. Our commitment to delivering
+                  high-quality services positions Zartinger Inspections as a
+                  trusted partner, providing reliable and innovative solutions
+                  for all inspection needs.
+                </p>
+              </div>
+              <!-- <a href="#" class="main-btn">Read More</a> -->
+            </div>
+            <!-- about content -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+
+    <!--====== PRODUCT FEATURES PART START ======-->
+
+    <section id="product_features" class="product_features_area pt-95">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-9">
+            <div class="section_title text-center pb-25">
+              <h4 class="title">Search & Rescue Autonomous Drone</h4>
+
+              <p class="pt-10">
+                Introducing the future of autonomous drones, featuring
+                integrated radar and advanced imaging technologies. Our
+                next-generation drones come equipped with integrated radar and
+                advanced imaging technologies specifically designed to excel in
+                obstacle avoidance, self-maneuvering capabilities, image
+                processing and facial recognition. These capabilities combine to
+                provide unparalleled precision, making them the ideal choice for
+                facilitating complex search and rescue operations. Elevate your
+                operations to new heights with our advanced technology.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="product_image mt-30">
+              <img src="assets/images/res2b.png" alt="product features" />
+            </div>
+            <!-- product image -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!--====== PRODUCT FEATURES PART ENDS ======-->
+
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="contact_area pt-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="contact_info mt-45">
+              <div class="section_title pb-15">
+                <h4 class="title">Get In Touch</h4>
+                <p class="pt-10 pb-20">
+                  Contact ZStinger Inspections for unparalleled drone-powered
+                  assessments. Our commitment to precision, safety, and client
+                  satisfaction ensures comprehensive insights for informed
+                  decision-making. Get in touch today for efficient and accurate
+                  aerial assessments that elevate your operational performance.
+                </p>
+              </div>
+
+              <!-- single info -->
+            </div>
+            <!-- contact info -->
+          </div>
+          <div class="col-lg-8">
+            <div class="contact_form pt-20">
+              <form id="contact-form" action="/contact.php" method="post">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="single_form mt-30">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <!-- single form -->
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single_form mt-30">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        required
+                      />
+                    </div>
+                    <!-- single form -->
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single_form mt-30">
+                      <input
+                        type="text"
+                        name="number"
+                        placeholder="Phone Number"
+                      />
+                    </div>
+                    <!-- single form -->
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single_form mt-30">
+                      <input type="text" name="subject" placeholder="Subject" />
+                    </div>
+                    <!-- single form -->
+                  </div>
+                  <div class="col-md-12">
+                    <div class="single_form mt-30">
+                      <textarea name="message" placeholder="Message"></textarea>
+                    </div>
+                  </div>
+                  <p class="form-message"></p>
+                  <div class="col-md-12">
+                    <div class="single_form mt-30">
+                      <button class="main-btn" type="submit">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-lg-start text-white">
+     
+      <section class="d-flex justify-content-between p-4">
+
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+       
+      </section>
+   
+      <section class="">
+        <div class="container text-md-start mt-5">
+        
+          <div class="row mt-3">
+           
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            
+              <img
+                src="assets/images/Zlogo1.png"
+                width="128px"
+                height="72px"
+                alt="Logo"
+              />
+
+              <p>Autonomous Drone Technology - Patent Pending</p>
+            </div>
+     
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+           
+              <h6 class="text-uppercase fw-bold">Products</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #1e75d9; height: 2px"
+              />
+              <p>
+                <a href="#home" class="page-scroll">Solar Drone</a>
+              </p>
+              o
+              <p>
+                <a href="#home2" class="page-scroll">Medium Exterior Drone</a>
+              </p>
+            </div>
+   
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            
+              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #1e75d9; height: 2px"
+              />
+              <p>
+                <a href="#features" class="page-scroll">Features</a>
+              </p>
+              <p>
+                <a href="#about" class="page-scroll">About</a>
+              </p>
+              <p>
+                <a href="#contact" class="page-scroll">Contact</a>
+              </p>
+              <p>
+                <a     class="page-scroll"
+                data-toggle="modal"
+                data-target="#form"  class="">Investor Portal</a>
+              </p>
+            </div>
+        </div>
+      </section>
+     
+      <hr
+        class="d-inline-block mx-auto"
+        style="width: 100%; height: 1px;"
+      />
+  
+      <div class="">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/"
+          >MDBootstrap.com</a
+        >
+      </div>
+  
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+    <!--====== PART ENDS ======-->
+
+    <!--====== Jquery js ======-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"
+      integrity="sha256-b/fLMBwSqO9vy/phDPv6OufPpR+VfUL+OsTEkJMPg+Q="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css"
+      integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM="
+      crossorigin="anonymous"
+    />
+    <script>
+      const subBtn = document.getElementById("sub_Btn");
+      const psw = document.querySelector("#password1");
+      const auth = document.getElementById("auth");
+      const modalLoader = document.getElementById("modalLoader")
+      const spinner = document.getElementById("loader")
+
+      subBtn.addEventListener("click", () => {
+        if (psw.value.trim() === "") {
+          return
+        }
+        modalLoader.style.display ='block'
+        spinner.style.display ='block'
+        if (psw.value == "1234") {
+        
+          setTimeout(() => {
+            auth.textContent = "Authenticated";
+            auth.className = "success";
+            window.location.href = "/investors";
+          }, 2000);
+        } else {
+          setTimeout(()=> {
+            auth.textContent = "Password incorrect!";
+            auth.className = "error";
+            modalLoader.style.display = 'none'
+            spinner.style.display = 'none'
+          },2000)
+        }
+        auth.className = "";
+        auth.textContent = "";
+      });
+    </script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
