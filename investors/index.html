@@ -128,6 +128,90 @@
             </h2>
           </h2>
         </div>
+        <div class="container mb-4" style="max-width: 100%; width: 550px">
+          <div class="row">
+            <div class="col-md-6 my-2">
+              <div
+                class="col-md-12 py-2 d-flex flex-column align-items-center justify-content-center bg-dark"
+              >
+                <!-- <div class="my-2">
+                  <img
+                    src="../assets/images/A4_Brochure_Cover_Mockup_1.jpg"
+                    alt="video thumbnail"
+                    width="90px"
+                    height="90px"
+                    style="border-radius: 8px"
+                  />
+                </div> -->
+                <video
+                  playsinline
+                  loop
+                  muted
+                  id="vid1"
+                  width="100px"
+                  height="100px"
+                >
+                  <source src="../assets/videos/aman.mp4" type="video/mp4" />
+                </video>
+
+                <div onclick="someFunce()" class="my-2 text-white">
+                  Hello world
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 my-2">
+              <div
+                class="col-md-12 py-2 d-flex flex-column align-items-center justify-content-center bg-dark"
+              >
+                <div class="my-2">
+                  <img
+                    src="../assets/images/A4_Brochure_Cover_Mockup_1.jpg"
+                    alt="video thumbnail"
+                    width="90px"
+                    height="90px"
+                    style="border-radius: 8px"
+                  />
+                </div>
+
+                <div class="my-2 text-white">Hello world</div>
+              </div>
+            </div>
+            <div class="col-md-6 my-2">
+              <div
+                class="col-md-12 py-2 d-flex flex-column align-items-center justify-content-center bg-dark"
+              >
+                <div class="my-2">
+                  <img
+                    src="../assets/images/A4_Brochure_Cover_Mockup_1.jpg"
+                    alt="video thumbnail"
+                    width="90px"
+                    height="90px"
+                    style="border-radius: 8px"
+                  />
+                </div>
+
+                <div class="my-2 text-white">Hello world</div>
+              </div>
+            </div>
+            <div class="col-md-6 my-2">
+              <div
+                class="col-md-12 py-2 d-flex flex-column align-items-center justify-content-center bg-dark"
+              >
+                <div class="my-2">
+                  <img
+                    src="../assets/images/A4_Brochure_Cover_Mockup_1.jpg"
+                    alt="video thumbnail"
+                    width="90px"
+                    height="90px"
+                    style="border-radius: 8px"
+                  />
+                </div>
+
+                <div class="my-2 text-white">Hello world</div>
+              </div>
+            </div>
+          </div>
+        </div>
         <table id="customers">
           <thead>
             <tr>
@@ -146,35 +230,14 @@
                 </a>
               </td>
             </tr>
-            <tr key="{i}">
-              <td>
-                <img
-                  src="../assets//images/A4_Brochure_Cover_Mockup_1.jpg"
-                  alt="thumbnail for video"
-                  height="40px"
-                  width="40px"
-                />
-              </td>
-              <td>short description for file one</td>
-              <td>
-                <a href="" target="_blank"> Play </a>
-              </td>
-            </tr>
-            <tr key="{i}">
-              <td>
-                <img
-                  src="../assets//images/A4_Brochure_Cover_Mockup_1.jpg"
-                  alt="thumbnail for video"
-                  height="40px"
-                  width="40px"
-                />
-              </td>
-              <td>Video 2 title</td>
-              <td>
-                <a href="" target="_blank"> Play </a>
-              </td>
-            </tr>
           </tbody>
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
         </table>
       </div>
     </div>
@@ -316,10 +379,10 @@
       crossorigin="anonymous"
     />
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var splide = new Splide(".splide");
-        splide.mount();
-      });
+      const someFunce = (vid) => {
+        alert("hello");
+        document.getElementById("vid1").play();
+      };
     </script>
     <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="../assets/js/vendor/modernizr-3.7.1.min.js"></script>
