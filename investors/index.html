@@ -132,19 +132,22 @@
           <div class="row">
             <div class="col-md-6 my-2">
               <div
-                class="col-md-12 py-2 d-flex flex-column align-items-center justify-content-center bg-dark"
+                class="col-md-12 h-auto py-2 d-flex flex-column align-items-center justify-content-center bg-dark"
               >
                 <div class="my-2">
-                  <img
+                  <!-- <img
                     src="../assets/images/playicon.jpeg"
                     alt="video thumbnail"
                     data-video="vid1"
-                    width="90px"
-                    height="90px"
+                    width="100px"
+                    height="100px"
                     style="border-radius: 8px"
                     id="video1"
                     class="thumbnail"
-                  />
+                  /> -->
+                  <video width="100%" height="100%" controls id="myvideo">
+                    <source src="../assets/videos/aman.mp4"></source>
+                  </video>
                 </div>
 
                 <div onclick="someFunce()" class="my-2 text-white">
@@ -154,18 +157,22 @@
             </div>
             <div class="col-md-6 my-2">
               <div
-                class="col-md-12 py-2 d-flex flex-column align-items-center justify-content-center bg-dark"
+                class="col-md-12 h-auto py-2 d-flex flex-column align-items-center justify-content-center bg-dark"
               >
                 <div class="my-2">
-                  <img
+                <!-- <img
                     src="../assets/images/playicon.jpeg"
                     alt="video thumbnail"
-                    width="90px"
-                    data-video="vid2"
-                    height="90px"
+                    data-video="vid1"
+                    width="100px"
+                    height="100px"
                     style="border-radius: 8px"
+                    id="video1"
                     class="thumbnail"
-                  />
+                  /> -->
+                  <video width="100%" height="100%" controls id="myvideo">
+                    <source src="../assets/videos/aman.mp4"></source>
+                  </video>
                 </div>
 
                 <div class="my-2 text-white">Title for video 2</div>
@@ -173,18 +180,22 @@
             </div>
             <div class="col-md-6 my-2">
               <div
-                class="col-md-12 py-2 d-flex flex-column align-items-center justify-content-center bg-dark"
+                class="col-md-12 py-2 d-flex flex-column align-items-center h-auto justify-content-center bg-dark"
               >
                 <div class="my-2">
-                  <img
+                  <!-- <img
                     src="../assets/images/playicon.jpeg"
                     alt="video thumbnail"
-                    width="90px"
-                    data-video="vid3"
-                    height="90px"
+                    data-video="vid1"
+                    width="100px"
+                    height="100px"
                     style="border-radius: 8px"
+                    id="video1"
                     class="thumbnail"
-                  />
+                  /> -->
+                  <video width="100%" height="100%" controls id="myvideo">
+                    <source src="../assets/videos/aman.mp4"></source>
+                  </video>
                 </div>
 
                 <div class="my-2 text-white">Title for video 3</div>
@@ -192,18 +203,22 @@
             </div>
             <div class="col-md-6 my-2">
               <div
-                class="col-md-12 py-2 d-flex flex-column align-items-center justify-content-center bg-dark"
+                class="col-md-12 py-2 d-flex flex-column align-items-center justify-content-center h-auto bg-dark"
               >
                 <div class="my-2">
-                  <img
+                   <!-- <img
                     src="../assets/images/playicon.jpeg"
                     alt="video thumbnail"
-                    width="90px"
-                    height="90px"
-                    data-video="vid3"
+                    data-video="vid1"
+                    width="100px"
+                    height="100px"
                     style="border-radius: 8px"
+                    id="video1"
                     class="thumbnail"
-                  />
+                  /> -->
+                  <video width="100%" height="100%" controls id="myvideo">
+                    <source src="../assets/videos/aman.mp4"></source>
+                  </video>
                 </div>
 
                 <div class="my-2 text-white">Title for video 4</div>
@@ -383,21 +398,30 @@
     />
     <script>
       // const video1 = document.querySelector("#video1");
+
       const thumbnails = document.querySelectorAll(".thumbnail");
       for (const tnail of thumbnails) {
-        tnail.addEventListener("click", (event) => {
-          // Check if clicked element is a video thumbnail
-          const videoId = event.target.getAttribute("data-video");
-          if (!videoId) return;
-          const iframe = document.createElement("div");
-          iframe.innerHTML =
-            '<p>x</p><div class="fluid-vids"><iframe width="100%" height="100%" src="../assets/videos/aman.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>';
-          const video = iframe.childNodes[1];
-          event.target.parentNode.replaceChild(video, event.target);
+        tnail.addEventListener(
+          "click",
+          (event) => {
+            // Check if clicked element is a video thumbnail
+            const videoId = event.target.getAttribute("data-video");
+            if (!videoId) return;
+            const iframe = document.createElement("div");
+            iframe.innerHTML =
+              '<p></p><div class="fluid-vids"><iframe width="100%" height="100%" src="../assets/videos/aman.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>';
+            const video = iframe.childNodes[1];
+            event.target.parentNode.replaceChild(video, event.target);
 
-          // Enter fullscreen mode
-          video.requestFullscreen();
-        });
+            // Enter fullscreen mode
+            video.requestFullscreen() ||
+              video.webkitRequestFullscreen() ||
+              video.mozRequestFullScreen() ||
+              video.msRequestFullscreen();
+            // video.Pa();
+          },
+          false
+        );
       }
     </script>
     <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
