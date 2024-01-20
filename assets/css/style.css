@@ -925,6 +925,15 @@ p {
   padding-top: 70px;
   height: 800px;
 }
+.header_hero2 {
+  z-index: 5;
+  background-position: bottom center;
+  overflow: hidden;
+  padding-top: 50px;
+  margin-top: 50px;
+  height: auto;
+  color: black;
+}
 @media only screen and (min-width: 1400px) {
   .header_hero {
     height: 900px;
